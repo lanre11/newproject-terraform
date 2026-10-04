@@ -6,9 +6,16 @@ terraform {
       version = "~>4.0"
     }
   }
+  backend "s3" {
+    bucket = "newproj-terraform-state"
+    region = "eu-west-2"
+    key    = "newproj-terraform.tfstate"
+  }
 }
 
 provider "aws" {
-  region = "eu-west-2"
+  region  = "eu-west-2"
   profile = "target-account"
 }
+
+
