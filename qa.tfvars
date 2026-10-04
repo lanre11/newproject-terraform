@@ -1,0 +1,5 @@
+ami = "ami-0e5df6fd7455a69b3"
+instance_type = "t3.micro"
+key_name = "new-key"
+environment = "qa"
+vpc_id = "vpc-022f95165ae2610c3"

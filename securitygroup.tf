@@ -1,7 +1,7 @@
 resource "aws_security_group" "newproject_sg" {
   name        = "newproject-sg"
   description = "sg for newproject app"
-  vpc_id      = "vpc-022f95165ae2610c3"
+  vpc_id      = var.vpc_id
 }
 
 resource "aws_security_group_rule" "ssh_rule" {
